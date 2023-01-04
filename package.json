@@ -3,7 +3,8 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "watch": "vite -- --watch"
+        "watch": "vite -- --watch",
+        "restart": "php artisan route:clear && php artisan cache:clear && php artisan view:clear && php artisan optimize:clear && php artisan route:cache && php artisan config:cache && php artisan optimize"
     },
     "devDependencies": {
         "axios": "^1.1.2",
